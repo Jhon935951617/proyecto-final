@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <form action="validar.php" method="POST">
-    <img class="chef" src="img/chef.jpg" alt="Chef">
-    <div class="login-container">
-        <div class="logo">
-            <img src="img/logo_calle8.png" alt="Restaurante Calle 8">
-        </div>
-        <h2>Iniciar Sesión</h2>
-        <form action="#">
-            <div class="input-group">
-                <label for="username">Usuario</label>
-                <input type="text" id="username" name="usuario">
-            </div>
-            <div class="input-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password">
-            </div>
-            <button type="submit">Acceder</button>
-        </form>
-    </form>
+  <div class="box-slider">
+    <div class="imagen">
+      <img src="img/1697375124_pizza.jpg" alt="">
     </div>
+    <div class="logo">
+      <img src="img/logo_calle8.png" alt="">
+    </div>
+    <div class="text"><b>Bienvenido</b> <br> <p>a restaurante Calle 8</p></div>
+  </div>
+  <div class="box-form-login">
+    <h2>Inicio de sesión</h2>
+    <form action="validar.php" method="POST">
+      <div class="grup-input">
+        <input type="text" name="usuario" id="usuario" required>
+        <label for="usuario">Usuario</label>
+      </div>
+      <div class="grup-input">
+        <input type="password" name="password" id="password" required>
+        <label for="password">Contraseña</label>
+      </div>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
 </body>
 </html>
